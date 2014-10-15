@@ -1,0 +1,15 @@
+/* Helper Classes */
+
+.center {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+header {
+	color: pink;
+	font-size: 35px;
+}
+
+h1 {
+	color: purple;
+}
