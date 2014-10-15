@@ -1,9 +1,12 @@
 extends layout
 
+block header
+	h1 Magellan's Awe$ome Trip
+	h2 Your #{locations[0].order} stop is #{locations[0].title}, #{locations[0].description}
+
 block content
-	img(src="#{imgurl}", alt="#{location}")
-	p Seville is an awesome city. There is an aquaduct there.
-	
+	img(src="#{locations[0].imgurl}", alt="#{locations[0].title}")
+
 block sidebar
-	a(href="#{next}")
+	a(href="#{locations[0].next}")
 		i.fa.fa-arrow-right.fa-2x

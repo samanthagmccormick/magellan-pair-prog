@@ -1,9 +1,12 @@
 extends layout
 
+block header
+	h1 Magellan's Awe$ome Trip
+	h2 Your #{locations[2].order} stop is #{locations[2].title}, #{locations[2].description}
+
 block content
-	img(src="#{imgurl}", alt="#{location}")
-	p I met Alicia, a freshman on spring break, in Cape Verde.
-	
+	img(src="#{locations[2].imgurl}", alt="#{locations[2].title}")
+
 block sidebar
-	a(href="#{next}")
+	a(href="#{locations[2].next}")
 		i.fa.fa-arrow-right.fa-2x

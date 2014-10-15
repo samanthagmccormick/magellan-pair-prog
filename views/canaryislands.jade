@@ -1,9 +1,12 @@
 extends layout
 
+block header
+	h1 Magellan's Awe$ome Trip
+	h2 Your #{locations[1].order} stop is #{locations[1].title}, #{locations[1].description}
+
 block content
-	img(src="#{imgurl}", alt="#{location}")
-	p The Canary Islands are cool at night I guess.
+	img(src="#{locations[1].imgurl}", alt="#{locations[1].title}")
 
 block sidebar
-	a(href="#{next}")
+	a(href="#{locations[1].next}")
 		i.fa.fa-arrow-right.fa-2x
