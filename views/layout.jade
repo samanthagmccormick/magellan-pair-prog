@@ -4,13 +4,18 @@ html(lang='en')
 		meta(charset="utf-8")
 		title Magellan's Awesome Trip
 		link(rel="stylesheet", href="/styles/main.css")
+		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
 
 	body
-		div.container.container-fluid.center
-			header Magellan's Awe$ome Trip Around the Friggin World!!!!
-			h1 #{location}
-			block content
-			block footer
+		header.center 
+			h1 Magellan's Awe$ome Trip
+			h2 Ahoy, #{location}!
+		.container.container-fluid.center
+			.row
+				.main.col-lg-10
+					block content
+				.sidebar.col-lg-2
+					block sidebar
 
 
 			

@@ -17,7 +17,7 @@ app.get('/', function(req, res) {
 app.get('/canaryislands', function(req, res) {
      res.render('canaryislands', {
      	location: "Canary Islands",
-     	imgurl: "http://scontent-a.cdninstagram.com/hphotos-xaf1/t51.2885-15/10729213_1556993674520390_1837994850_n.jpg",
+     	imgurl: "http://scontent-a.cdninstagram.com/hphotos-xaf1/t51.2885-15/10724892_674274842687382_147977390_n.jpg",
      	next: "capeverde"
      });
 });

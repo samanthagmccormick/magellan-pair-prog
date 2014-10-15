@@ -1,8 +1,9 @@
 extends layout
 
 block content
-	div.container
-		img(src="#{imgurl}", alt="")
+	img(src="#{imgurl}", alt="#{location}")
+	p I met Alicia, a freshman on spring break, in Cape Verde.
 	
-block footer
-	a(href="#{next}") Next
+block sidebar
+	a(href="#{next}")
+		i.fa.fa-arrow-right.fa-2x

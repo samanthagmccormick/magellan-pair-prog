@@ -1,15 +1,65 @@
 /* Helper Classes */
 
 .center {
-	max-width: 800px;
+	max-width: 750px;
 	margin: 0 auto;
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+/* Tags */
+
+body {
+	font-family: Helvetica;
+}
+
+a {
+	color: aqua;
 }
 
 header {
-	color: pink;
-	font-size: 35px;
+	margin: 20px 0;
+}
+
+footer {
+	margin: 20px 0;
 }
 
 h1 {
 	color: purple;
+}
+
+h2 {
+	color: pink;
+}
+
+/* Custom Classes */
+
+.main {
+	float: left;
+	padding: 20px;
+}
+
+.sidebar {
+	padding: 20px;
+	position: relative;
+}
+
+.under {
+	position: absolute;
+}
+
+.over {
+	position: fixed;
+	margin: 10px;
+	background-color: #000;
+}
+
+p.over {
+	font-size: 1.2em;
+	color: #fff;
+	padding: 5px 15px 15px 15px;
 }
