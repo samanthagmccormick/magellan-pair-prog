@@ -3,16 +3,13 @@ var locations = require('../models/locations.js');
 
 var nextController = {
 	nextLoc: function(req, res) {
-		var queryLoc = req.query.location;
+		var query = req.params.nextloc;
 
-		// var jsonLocations = JSON.parse(locations);
+		var currentLoc = locations[query].title;
+		var nextLoc = locations[query].next;
 
-		var found = locations.filter(function(obj) {
-			if (queryLoc === obj.title)
-				return obj.title;
-		});
+		res.send("The location after " + currentLoc + " is " + nextLoc);
 
-		res.send(found);
 	}
 };
 
